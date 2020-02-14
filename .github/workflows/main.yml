@@ -12,5 +12,9 @@ jobs:
 
     - name: Install things
       run: |
-        apt install pandoc
+        sudo apt install pandoc
+
+    - name: Build things
+      run: |
         pandoc details.yml -o output.pdf --template=template.tex --pdf-engine=xelatex
+
