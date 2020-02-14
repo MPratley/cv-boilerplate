@@ -1,5 +1,11 @@
 # CV Boilerplate
 
+---
+
+Big thanks to https://github.com/mrzool/cv-boilerplate for this very cool idea and repo
+
+---
+
 > I consider LaTeX resumes to be a secret handshake of sorts, something that makes me significantly more likely to be inclined to hire a candidate.  
 > &mdash;<cite>[zackelan](https://news.ycombinator.com/item?id=10452606)<cite> on HN
 
