@@ -13,10 +13,11 @@ jobs:
     - name: Install things
       run: |
         sudo apt install pandoc texlive-base texlive-fonts-recommended
+        sudo tlmgr init-usertree
         sudo tlmgr update --all
         sudo tlmgr install fontspec geometry multicol xunicode xltxtra marginnote sectsty ulem hyperref polyglossia
 
     - name: Build things
       run: |
-        pandoc details.yml -o output.pdf --template=template.tex --pdf-engine=xelatex
+        sudo pandoc details.yml -o output.pdf --template=template.tex --pdf-engine=xelatex
 
