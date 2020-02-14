@@ -13,8 +13,8 @@ jobs:
     - name: Install things
       run: |
         sudo apt install pandoc texlive-base texlive-fonts-recommended
-        tlmgr update --all
-        tlmgr install fontspec geometry multicol xunicode xltxtra marginnote sectsty ulem hyperref polyglossia
+        sudo tlmgr update --all
+        sudo tlmgr install fontspec geometry multicol xunicode xltxtra marginnote sectsty ulem hyperref polyglossia
 
     - name: Build things
       run: |
