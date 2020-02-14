@@ -12,7 +12,7 @@ jobs:
 
     - name: Install things
       run: |
-        sudo apt install pandoc texlive-base texlive-fonts-recommended
+        sudo apt install pandoc texlive-base texlive-fonts-recommended xzdec
         tlmgr init-usertree
         tlmgr update --all
         tlmgr install fontspec geometry multicol xunicode xltxtra marginnote sectsty ulem hyperref polyglossia
