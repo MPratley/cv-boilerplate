@@ -13,6 +13,8 @@ jobs:
     - name: Install things
       run: |
         sudo apt install pandoc
+        tlmgr update --all
+        tlmgr install fontspec geometry multicol xunicode xltxtra marginnote sectsty ulem hyperref polyglossia
 
     - name: Build things
       run: |
