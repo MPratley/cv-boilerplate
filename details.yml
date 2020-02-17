@@ -15,28 +15,57 @@ urls:
 
 # Sections
 
-intro: ""
-
-skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
-
 experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philisoph
-  city: Sils-Maria
-  description: Hello! This was a job. Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußischen Artillerie
-  job: Kanonier
-  city: Naumburg
+- employer: AND Digital
+  job: Product Development and DevOps Internship
+  startDate: 2019-09
+  endDate: 2020-09
+  city: London
+  roles:
+  - role: DevOps at UK Insurance Company
+    time: 6 Months
+    bullets:
+      - "DevOps on a white-label product, enabling new brands and marketing campaigns at speed"
+      - "Designed CI/CD pipelines and Infrastructure As Code throughout the project"
+      - "Trained product team in DevOps to work as a cross-functional team"
+      - "Contributed to open source library, working with its maintainers to upstream new features"
+      - "Product stack: React Frontend, Kubernetes, Serverless, Terraform IAC, Azure"
+  - role: API Developer and DevOps at Travel Loyalty Company
+    time: 6 Months
+    bullets: 
+      - "Developed and expanded the firm’s API on-boarding process for new partners"
+      - "Built a functional and accessible API developer portal"
+      - "Ran web API workshops to upskill non-technical stakeholders on tech infrastructure"
+      - "Product stack: AWS, Ruby, JavaScript"
+- employer: BBC
+  job: Key Stage 4 Programming Tutor
+  startDate: 2018-01
+  endDate: 2018-04
+  city: Newcastle Upon Tyne
+  roles:
+  - role:
+    time:
+    bullets:
+- employer: J.P Morgan
+  job:
+  startDate: 2018-04
+  endDate: 2018-04
+  city: Glasgow
+  roles:
+  - role:
+    time:
+    bullets:
+- employer: IBM
+  job:
+  startDate:
+  endDate:
+  city:
+  roles:
+  - role:
+    time:
+    bullets:
+
+    
 
 education:
 - year: 1867
@@ -49,8 +78,8 @@ education:
   city: Naumburg
 
 # Settings
-mainfont: Ubuntu
+mainfont: Helvetica Neue Light
 fontsize: 11pt
-lang: English
+lang: en-GB
 geometry: a4paper, left=30mm, right=20mm, top=17mm, bottom=17mm
 ---
