@@ -1,13 +1,12 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-
-\documentclass[$fontsize$, a4paper]{article}
+\documentclass[11pt, a4paper]{article}
 
 % LAYOUT
 %--------------------------------
 % Margins
 \usepackage{geometry} 
-\geometry{$geometry$}
+\geometry{a4paper, left=30mm, right=20mm, top=17mm, bottom=17mm}
 
 % Do not indent paragraphs
 \setlength\parindent{0in}
@@ -16,16 +15,14 @@
 \usepackage{multicol}
 \setlength{\columnsep}{-3.5cm}
 
-% Uncomment to suppress page numbers
-% \pagenumbering{gobble}
+Uncomment to suppress page numbers
+\pagenumbering{gobble}
 
 % LANGUAGE
 %--------------------------------
 % Set the main language
-$if(lang)$
 \usepackage{polyglossia}
-\setmainlanguage{$lang$}
-$endif$
+\setmainlanguage{en-GB}
 
 % TYPOGRAPHY
 %--------------------------------
@@ -34,9 +31,10 @@ $endif$
 \usepackage{xltxtra}
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
-% Cool ampersand
-\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+\setmainfont[Ligatures={Common}, Numbers={OldStyle}, Color=828282]{Ubuntu} % sets the roman font
+\newfontfamily\headingFont[Color=434343]{Times}
+
 
 % MARGIN NOTES
 %--------------------------------
@@ -136,13 +134,6 @@ $if(education)$
 $for(education)$
 \note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
 \emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
-$endfor$
-$endif$
-
-$if(languages)$
-\section*{Languages}
-$for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
 $endfor$
 $endif$
 
