@@ -13,11 +13,30 @@ urls:
 - github.com/MPratley
 - linkedin.com/in/MPratley
 
-# Sections
+# EXPERIENCE
+# schema explanation follows, but it's not enforced by anything. Would be a fun make step though!
+# 
+#   {
+#     employer: required
+#     job: job title, required
+#     startDate: YYYY-MM(-DD::etc) Y&M are required
+#     endDate: optional & same as startDate. If blank, present is inserted by template
+#     city: optional
+#     roles: required, a list of roles (see object below)
+#       [{
+#         role: required subtitle or project name or event etc etc. More specific than job title
+#         time: optional time spent in role, written however
+#         bullets: optional but would be weird to leave out
+#       }]
+#   }
+#  The whole subrole array thing is odd 
+#  but I need it due to having a few sub-roles (consultancy, wahey)
+# 
+
 
 experience:
 - employer: AND Digital
-  job: Product Development and DevOps Internship
+  job: Digital Product Development and DevOps Internship
   startDate: 2019-09
   endDate: 2020-09
   city: London
@@ -43,43 +62,43 @@ experience:
   endDate: 2018-04
   city: Newcastle Upon Tyne
   roles:
-  - role:
-    time:
+  - role: R&D CLIMB Initiative (STEM Education Scheme)
+    time: 
     bullets:
+    - "Taught basics of embedded programming with interactive tasks using BBC Micro:Bit"
+    - "Delivered presentation to Micro:Bit creators and BBC director general on the initiative’s progress"
 - employer: J.P Morgan
-  job:
+  job: Spring Internship
   startDate: 2018-04
   endDate: 2018-04
   city: Glasgow
   roles:
-  - role:
+  - role: Into Technology Program
     time:
-    bullets:
+    bullets: 
+    - Variety of tasks included workshops, hackathons and applications of agile development
 - employer: IBM
-  job:
-  startDate:
-  endDate:
-  city:
+  job: Junior Software Development Internship
+  startDate: 2015-08
+  endDate: 2015-08
+  city: London
   roles:
-  - role:
-    time:
+  - role: Agile Development Platform Prototype
+    time: 1 Month
     bullets:
+    - Used Meteor web framework and Git workflow
+    - Strong teamwork skills to apply and develop agile ways of working
 
-    
-
+# EDUCATION SECTION
+# Schema is p simple for this one
+# Tempted to write it in Latex directly to save space since it's not repeated
+# and writing the formatting for it directly is likely faster than the xelatex logic 
 education:
-- year: 1867
-  subject: Philology
-  institute: Leipzig Universität
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
-
-# Settings
-mainfont: Helvetica Neue Light
-fontsize: 11pt
-lang: en-GB
-geometry: a4paper, left=30mm, right=20mm, top=17mm, bottom=17mm
+- years: 2016-2020
+  subject: Computer Science BSc Honours 
+  institute: Newcastle University
+- year: 2012-2016
+  subject: A Levels & GCSEs
+  institute: George Abbot School and Sixth Form
+  city: Guildford
 ---
