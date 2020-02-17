@@ -121,9 +121,13 @@ $endif$
 \section*{Previous Experience}
 \noindent
 $for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+\note{$experience.city$}\textsc{$experience.employer$} | \emph{$experience.job$}\\
+\note{$experience.years$}
+$if(experience.description)$
+$experience.description$
+\\[.1cm]
+$endif$
+\\[.2cm]
 $endfor$
 
 $if(education)$

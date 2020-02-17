@@ -1,20 +1,21 @@
 ---
 # Personal details
-name: Friedrich Nietzsche
+name: Marcus Pratley
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
+- Africa Cottage, Old Merrow Street
+- Guilford
+- United Kingdom
+phone: "+44 74600 89698"
+email: marcuspratley@gmail.com
 # Insert URLs without http://
 urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+- mjp.dev
+- github.com/MPratley
+- linkedin.com/in/MPratley
 
 # Sections
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
+intro: ""
 
 skills:
 - Aesthetics, Ethics, Metaphysics, Nihilism
@@ -27,6 +28,7 @@ experience:
   employer: Freiberufler
   job: Freier Philisoph
   city: Sils-Maria
+  description: Hello! This was a job. Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.Hello! This was a job.
 - years: 1869–-1879
   employer: Universität Basel
   job: Professor für klassische Philologie
@@ -47,8 +49,8 @@ education:
   city: Naumburg
 
 # Settings
-mainfont: Hoefler Text
-fontsize: 10pt
+mainfont: Ubuntu
+fontsize: 11pt
 lang: English
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: a4paper, left=30mm, right=20mm, top=17mm, bottom=17mm
 ---
