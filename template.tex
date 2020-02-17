@@ -74,7 +74,7 @@ $endif$
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.1cm]
+{\LARGE $name$}\\[.2cm]
 
 $if(urls)$
 \begin{multicols}{2}
@@ -99,14 +99,14 @@ $endfor$
 \end{multicols}
 $endif$
 
-% \vspace{30pt}
+\vspace{30pt}
 
 $if(intro)$
 $intro$
 $endif$
 
-$if(skills)$
 \subsection*{Areas of Interest}
+$if(skills)$
 \begin{itemize}
     $for(skills)$
       \item $skills$
@@ -116,35 +116,28 @@ $endif$
 
 % \vfill
 
-% \vspace{25pt}
+\vspace{25pt}
 
 \section*{Previous Experience}
 \noindent
 $for(experience)$
-  \note{$experience.city$}\textbf{$experience.employer$} | \emph{$experience.job$}\\
-  \note{$experience.years$}
-  $if(experience.description)$
-    $experience.description$
-    \\[.2cm]
-  $endif$
-  $if(experience.bullets)$
-    \vspace{-20pt}
-    \begin{itemize}
-      $for(experience.bullets)$
-        \item $experience.bullets$
-      $endfor$
-    \end{itemize}
-  $endif$
+\note{$experience.city$}\textsc{$experience.employer$} | \emph{$experience.job$}\\
+\note{$experience.years$}
+$if(experience.description)$
+$experience.description$
+\\[.1cm]
+$endif$
+\\[.2cm]
 $endfor$
 
-% $if(education)$
-% \section*{Education}
-% \noindent
-% $for(education)$
-% \note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-% \emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
-% $endfor$
-% $endif$
+$if(education)$
+\section*{Education}
+\noindent
+$for(education)$
+\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
+\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
+$endfor$
+$endif$
 
 $if(languages)$
 \section*{Languages}
